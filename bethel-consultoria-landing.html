@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursos e Formações | Bethel Consultoria — Quésia Grellmann</title>
+<meta name="description" content="Formações em gestão, projetos, captação de recursos, relações institucionais e terceiro setor com Quésia de Araújo Grellmann. Conhecimento prático para transformar propósito em estratégia e impacto.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bethel Consultoria">
+<meta property="og:title" content="Cursos e Formações | Bethel Consultoria — Quésia Grellmann">
+<meta property="og:description" content="Estratégia, gestão e impacto para organizações que cuidam de pessoas e transformam realidades. Conheça as formações da Bethel.">
+<meta property="og:locale" content="pt_BR">
+<!-- TODO: adicionar og:image com uma imagem institucional 1200x630 quando disponível -->
+<!-- TODO: adicionar og:url com o domínio definitivo -->
+
+<!-- Favicon: TODO substituir por favicon oficial da Bethel (arquivo /favicon.ico ou .svg) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2312332E'/%3E%3Ctext x='50' y='68' font-size='58' font-family='serif' fill='%23F7F4EC' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Libre+Franklin:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#F7F4EC',
+          paperAlt: '#EFE8D8',
+          ink: '#22241E',
+          deep: '#12332E',
+          deep2: '#0B211C',
+          gold: '#A9814B',
+          line: '#DBD2BC'
+        },
+        fontFamily: {
+          display: ['"Fraunces"', 'serif'],
+          body: ['"Libre Franklin"', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Schema.org: Organization (apenas dados fornecidos; sem números ou avaliações inventadas) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Bethel Consultoria",
+  "description": "Estratégia, gestão e impacto para organizações que cuidam de pessoas e transformam realidades.",
+  "url": "",
+  "sameAs": []
+}
+</script>
+
+<style>
+  :root{
+    --paper:#F7F4EC;
+    --paper-alt:#EFE8D8;
+    --ink:#22241E;
+    --deep:#12332E;
+    --deep-2:#0B211C;
+    --gold:#A9814B;
+    --line:#DBD2BC;
+    --line-dark: rgba(247,244,236,0.16);
+  }
+  *{ scroll-behavior: smooth; }
+  html{ scroll-padding-top: 96px; }
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Libre Franklin', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3,h4,.font-display{ font-family:'Fraunces', serif; }
+
+  ::selection{ background: var(--deep); color: var(--paper); }
+
+  a{ text-decoration:none; }
+
+  .skip-link{
+    position:absolute; left:-9999px; top:auto;
+    background:var(--deep); color:var(--paper); padding:.75rem 1.25rem;
+    z-index:100; border-radius:2px;
+  }
+  .skip-link:focus{ left:1rem; top:1rem; }
+
+  :focus-visible{
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  /* Eyebrow / marginalia — assinatura visual de "dossiê institucional" */
+  .eyebrow{
+    display:flex; align-items:center; gap:.85rem;
+    font-family:'Libre Franklin', sans-serif;
+    font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+    color: var(--deep); font-weight:600; margin-bottom:1.25rem;
+  }
+  .eyebrow .idx{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    color: var(--gold); font-size:1rem; letter-spacing:0; text-transform:none;
+  }
+  .eyebrow .rule{ height:1px; width:2.75rem; background: var(--gold); opacity:.55; flex-shrink:0; }
+  .eyebrow.on-dark{ color: var(--paper); }
+
+  .hairline{ border-color: var(--line); }
+  .hairline-dark{ border-color: var(--line-dark); }
+
+  /* Botões */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
+    padding:.85rem 1.75rem; font-size:.85rem; font-weight:600;
+    letter-spacing:.03em; border-radius:2px; transition: all .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{ background: var(--deep); color: var(--paper); }
+  .btn-primary:hover{ background: var(--deep-2); transform: translateY(-1px); }
+  .btn-ghost{ background:transparent; color: var(--ink); border:1px solid var(--ink); }
+  .btn-ghost:hover{ background: var(--ink); color: var(--paper); }
+  .btn-ghost-light{ background:transparent; color: var(--paper); border:1px solid rgba(247,244,236,.5); }
+  .btn-ghost-light:hover{ background: var(--paper); color: var(--deep); border-color: var(--paper); }
+  .btn-gold{ background: var(--gold); color: var(--deep-2); }
+  .btn-gold:hover{ background:#95713e; transform: translateY(-1px); }
+
+  /* Reveal on scroll */
+  .reveal{ opacity:0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.is-visible{ opacity:1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+    *{ scroll-behavior:auto !important; }
+  }
+
+  /* Header */
+  #site-header{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    background: rgba(247,244,236,.88); backdrop-filter: blur(10px);
+    border-bottom:1px solid transparent;
+    transition: border-color .3s ease, box-shadow .3s ease;
+  }
+  #site-header.scrolled{
+    border-bottom-color: var(--line);
+    box-shadow: 0 4px 24px rgba(18,51,46,.06);
+  }
+  .nav-link{
+    position:relative; font-size:.85rem; font-weight:500; color: var(--ink);
+    padding-bottom:2px;
+  }
+  .nav-link::after{
+    content:''; position:absolute; left:0; bottom:0; height:1px; width:0;
+    background: var(--gold); transition: width .25s ease;
+  }
+  .nav-link:hover::after{ width:100%; }
+
+  /* Mobile menu */
+  #mobile-menu{
+    position:fixed; inset:0; z-index:60; background: var(--deep);
+    transform: translateY(-100%); transition: transform .4s ease;
+  }
+  #mobile-menu.open{ transform: translateY(0); }
+
+  /* Pillars */
+  .pillar{ border-top:1px solid var(--line); padding-top:1.5rem; }
+
+  /* Course card */
+  .card-curso{
+    border:1px solid var(--line); background: var(--paper);
+    padding:2rem; display:flex; flex-direction:column; height:100%;
+    transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+  }
+  .card-curso:hover{
+    border-color: var(--gold); box-shadow: 0 12px 30px rgba(18,51,46,.08);
+    transform: translateY(-3px);
+  }
+  .status-tag{
+    display:inline-block; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase;
+    font-weight:700; padding:.3rem .6rem; border:1px solid currentColor;
+  }
+  .status-aberta{ color:#2F6B4F; }
+  .status-embreve{ color:#6B665A; }
+  .status-espera{ color:#A9814B; }
+
+  /* FAQ */
+  details.faq summary{ cursor:pointer; list-style:none; }
+  details.faq summary::-webkit-details-marker{ display:none; }
+  details.faq summary .plus{ transition: transform .3s ease; }
+  details.faq[open] summary .plus{ transform: rotate(45deg); }
+  details.faq{ border-top:1px solid var(--line); }
+  details.faq:last-child{ border-bottom:1px solid var(--line); }
+
+  /* Photo placeholder */
+  .photo-frame{
+    border:1px solid var(--line);
+    background: repeating-linear-gradient(135deg, var(--paper-alt), var(--paper-alt) 10px, var(--paper) 10px, var(--paper) 20px);
+  }
+
+  input[type=text], input[type=email], input[type=tel], select{
+    background: var(--paper); border:1px solid var(--line); color: var(--ink);
+    padding:.85rem 1rem; width:100%; font-family:'Libre Franklin', sans-serif; font-size:.95rem;
+  }
+  input:focus, select:focus{ border-color: var(--deep); }
+
+  ::placeholder{ color:#8A8676; }
+
+  .lead-success{ display:none; }
+  .lead-success.show{ display:block; }
+
+  /* Modal: Em breve */
+  #modal-embreve{
+    position:fixed; inset:0; z-index:100; display:none;
+    align-items:center; justify-content:center;
+    background: rgba(11,33,28,.72); padding:1.5rem;
+  }
+  #modal-embreve.open{ display:flex; }
+  #modal-embreve .modal-box{
+    background: var(--paper); border:1px solid var(--line);
+    max-width:28rem; width:100%; padding:2.75rem 2rem 2.25rem; text-align:center;
+    position:relative;
+  }
+  #modal-embreve .modal-close{
+    position:absolute; top:.75rem; right:.75rem; background:none; border:none;
+    cursor:pointer; color:#6B665A; font-size:1.6rem; line-height:1; padding:.4rem .6rem;
+  }
+  #modal-embreve .modal-close:hover{ color: var(--deep); }
+</style>
+</head>
+<body class="font-body">
+
+<a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+<!-- ======================= HEADER ======================= -->
+<header id="site-header">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="#inicio" class="flex flex-col leading-none">
+      <span class="font-display text-2xl tracking-wide" style="color:var(--deep)">BETHEL</span>
+      <span class="text-[.65rem] tracking-[.25em] uppercase" style="color:var(--gold)">Consultoria</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-link">Início</a>
+      <a href="#formacoes" class="nav-link">Formações</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#para-quem" class="nav-link">Para quem é</a>
+      <a href="#metodologia" class="nav-link">Metodologia</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <a href="#formacoes" class="hidden lg:inline-flex btn btn-primary">Conheça as formações</a>
+
+    <button id="menu-toggle" class="lg:hidden p-2" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--deep)">
+        <path stroke-linecap="round" stroke-width="1.6" d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+  <div class="flex justify-end p-6">
+    <button id="menu-close" aria-label="Fechar menu" class="p-2">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--paper)"><path stroke-linecap="round" stroke-width="1.6" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="flex flex-col items-center gap-8 mt-10" aria-label="Navegação mobile">
+    <a href="#inicio" class="mobile-link font-display text-3xl" style="color:var(--paper)">Início</a>
+    <a href="#formacoes" class="mobile-link font-display text-3xl" style="color:var(--paper)">Formações</a>
+    <a href="#sobre" class="mobile-link font-display text-3xl" style="color:var(--paper)">Sobre</a>
+    <a href="#para-quem" class="mobile-link font-display text-3xl" style="color:var(--paper)">Para quem é</a>
+    <a href="#metodologia" class="mobile-link font-display text-3xl" style="color:var(--paper)">Metodologia</a>
+    <a href="#contato" class="mobile-link font-display text-3xl" style="color:var(--paper)">Contato</a>
+    <a href="#formacoes" class="mobile-link btn btn-gold mt-4">Conheça as formações</a>
+  </nav>
+</div>
+
+<!-- ======================= MODAL: EM BREVE ======================= -->
+<div id="modal-embreve" role="dialog" aria-modal="true" aria-label="Site em desenvolvimento">
+  <div class="modal-box">
+    <button type="button" class="modal-close" aria-label="Fechar">&times;</button>
+    <p class="eyebrow" style="justify-content:center"><span class="rule"></span>Em breve</p>
+    <h3 class="font-display font-light text-2xl mt-3" style="color:var(--deep)">Este site está em desenvolvimento</h3>
+    <p class="mt-4 text-sm leading-relaxed" style="color:#5A5748">Estamos finalizando os últimos detalhes. Em breve a Bethel Consultoria será lançada oficialmente.</p>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- ======================= HERO ======================= -->
+<section id="inicio" class="pt-40 pb-24 lg:pt-48 lg:pb-32 px-6 lg:px-10 border-b hairline">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14 items-end">
+    <div class="lg:col-span-7">
+      <p class="eyebrow"><span class="rule"></span>Bethel Educação &amp; Desenvolvimento</p>
+      <h1 class="font-display font-light text-[2.5rem] leading-[1.12] lg:text-[3.6rem] lg:leading-[1.1]" style="color:var(--deep)">
+        Conhecimento que transforma propósito em <em class="italic font-normal" style="color:var(--gold)">estratégia</em>, projetos e resultados.
+      </h1>
+      <p class="mt-8 text-lg leading-relaxed max-w-xl" style="color:#3B3D34">
+        Formações desenvolvidas a partir da experiência prática em gestão, projetos, relações institucionais, terceiro setor e mobilização de recursos.
+      </p>
+      <p class="mt-3 font-display italic text-lg" style="color:var(--deep)">Com Quésia de Araújo Grellmann</p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#formacoes" class="btn btn-primary">Conheça as formações</a>
+        <a href="#sobre" class="btn btn-ghost">Conheça a Bethel</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5">
+      <div class="photo-frame aspect-[4/5] overflow-hidden">
+        <img src="imgquesia.jpg" alt="Quésia de Araújo Grellmann" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= POSICIONAMENTO ======================= -->
+<section class="py-24 lg:py-32 px-6 lg:px-10 reveal">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-4">
+      <p class="eyebrow"><span class="idx">01</span><span class="rule"></span>Posicionamento</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Da experiência prática para a sala de aula.</h2>
+    </div>
+    <div class="lg:col-span-8">
+      <p class="text-lg leading-relaxed max-w-2xl" style="color:#3B3D34">
+        Na Bethel, conhecimento não nasce apenas dos livros. Nasce também da experiência de quem precisa transformar ideias em projetos, projetos em recursos e recursos em impacto.
+      </p>
+      <p class="mt-5 text-lg leading-relaxed max-w-2xl" style="color:#3B3D34">
+        As formações unem estratégia, ferramentas práticas, legislação, gestão e experiências reais para ajudar profissionais e organizações a estruturar melhor suas iniciativas e ampliar seus resultados.
+      </p>
+
+      <div class="mt-14 grid sm:grid-cols-3 gap-8">
+        <div class="pillar">
+          <h3 class="font-display text-xl" style="color:var(--deep)">Estratégia</h3>
+          <p class="mt-2 text-sm" style="color:#5A5748">Transformar propósito em direção.</p>
+        </div>
+        <div class="pillar">
+          <h3 class="font-display text-xl" style="color:var(--deep)">Gestão</h3>
+          <p class="mt-2 text-sm" style="color:#5A5748">Transformar planejamento em execução.</p>
+        </div>
+        <div class="pillar">
+          <h3 class="font-display text-xl" style="color:var(--deep)">Impacto</h3>
+          <p class="mt-2 text-sm" style="color:#5A5748">Transformar projetos em resultados que permanecem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FORMAÇÕES ======================= -->
+<section id="formacoes" class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--paper-alt)">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="eyebrow"><span class="idx">02</span><span class="rule"></span>Formações Bethel</p>
+      <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--deep)">Conteúdo aplicável para quem precisa fazer acontecer.</h2>
+    </div>
+
+    <div id="cursos-grid" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    <div class="mt-14 text-center">
+      <a href="#contato" class="btn btn-ghost">Quero receber os próximos cursos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SOBRE QUÉSIA ======================= -->
+<section id="sobre" class="py-24 lg:py-32 px-6 lg:px-10 reveal">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14 items-start">
+    <div class="lg:col-span-5">
+      <p class="eyebrow"><span class="idx">03</span><span class="rule"></span>Quem está por trás das formações</p>
+      <h2 class="font-display font-light text-3xl leading-tight mb-8" style="color:var(--deep)">Experiência prática transformada em conhecimento.</h2>
+      <div class="photo-frame aspect-[4/5] overflow-hidden max-w-sm">
+        <img src="IMG2.jpg" alt="Quésia de Araújo Grellmann" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <div class="lg:col-span-7">
+      <p class="text-lg leading-relaxed" style="color:#3B3D34">
+        <strong style="color:var(--deep)">Quésia de Araújo Grellmann</strong> construiu sua trajetória profissional atuando na interseção entre gestão, projetos, relações institucionais, comunicação, terceiro setor e impacto social.
+      </p>
+      <p class="mt-5 text-lg leading-relaxed" style="color:#3B3D34">
+        Sua experiência envolve liderança de equipes e projetos, desenvolvimento institucional, mobilização de recursos, projetos sociais, comunicação, voluntariado, relacionamento com instituições públicas e privadas e articulação entre diferentes áreas de uma organização.
+      </p>
+      <p class="mt-5 text-lg leading-relaxed" style="color:#3B3D34">
+        Nas formações da Bethel, essa experiência é transformada em ferramentas, métodos e aprendizados que podem ser aplicados por outros profissionais e organizações.
+      </p>
+
+      <div class="mt-10 border-t hairline pt-8 grid sm:grid-cols-2 gap-x-8 gap-y-3">
+        <p class="text-sm" style="color:#5A5748">— Graduação em Direito</p>
+        <p class="text-sm" style="color:#5A5748">— Pós-graduação em Gestão Jurídica Hospitalar</p>
+        <p class="text-sm" style="color:#5A5748">— Formação em Gestão de Projetos</p>
+        <p class="text-sm" style="color:#5A5748">— Gestão de Projetos pelo Insper</p>
+        <p class="text-sm" style="color:#5A5748">— Formação em Processos Gerenciais</p>
+        <p class="text-sm" style="color:#5A5748">— Formação em Gestão de Pessoas</p>
+        <p class="text-sm" style="color:#5A5748">— Formação de Multiplicadores da ONA</p>
+        <p class="text-sm" style="color:#5A5748">— Captação e Mobilização de Recursos</p>
+      </div>
+
+      <div class="mt-10">
+        <a href="#formacoes" class="btn btn-primary">Conheça as formações</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DIFERENCIAIS ======================= -->
+<section class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline-dark reveal" style="background:var(--deep)">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="eyebrow on-dark"><span class="idx" style="color:var(--gold)">04</span><span class="rule"></span>Diferenciais</p>
+      <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--paper)">Mais prática. Menos conteúdo que termina na última aula.</h2>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="border-t hairline-dark pt-6">
+        <h3 class="font-display text-lg" style="color:var(--paper)">Experiência real</h3>
+        <p class="mt-2 text-sm" style="color:#C9C6B9">Conteúdo conectado a desafios vivenciados na gestão de organizações e projetos.</p>
+      </div>
+      <div class="border-t hairline-dark pt-6">
+        <h3 class="font-display text-lg" style="color:var(--paper)">Ferramentas aplicáveis</h3>
+        <p class="mt-2 text-sm" style="color:#C9C6B9">Modelos e métodos que podem ser levados para a rotina profissional.</p>
+      </div>
+      <div class="border-t hairline-dark pt-6">
+        <h3 class="font-display text-lg" style="color:var(--paper)">Visão integrada</h3>
+        <p class="mt-2 text-sm" style="color:#C9C6B9">Estratégia, gestão, legislação, comunicação e impacto tratados de maneira conectada.</p>
+      </div>
+      <div class="border-t hairline-dark pt-6">
+        <h3 class="font-display text-lg" style="color:var(--paper)">Propósito com gestão</h3>
+        <p class="mt-2 text-sm" style="color:#C9C6B9">Porque boas intenções precisam de planejamento para gerar resultados sustentáveis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PARA QUEM ======================= -->
+<section id="para-quem" class="py-24 lg:py-32 px-6 lg:px-10 reveal">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-5">
+      <p class="eyebrow"><span class="idx">05</span><span class="rule"></span>Para quem são as formações</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Para quem quer sair da intenção e construir projetos consistentes.</h2>
+    </div>
+    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-4">
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Gestores e coordenadores</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Lideranças institucionais</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Profissionais do terceiro setor</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Organizações sociais</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Instituições religiosas e filantrópicas</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Profissionais da saúde</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Responsáveis por projetos sociais</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Profissionais de captação de recursos</p>
+      <p class="text-base sm:col-span-2" style="color:#3B3D34">E qualquer pessoa que precise estruturar projetos e transformar ideias em execução.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DIAGNÓSTICO / PROBLEMA ======================= -->
+<section class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--paper-alt)">
+  <div class="max-w-7xl mx-auto">
+    <p class="eyebrow"><span class="idx">06</span><span class="rule"></span>Diagnóstico</p>
+    <h2 class="font-display font-light text-2xl lg:text-3xl leading-snug max-w-3xl" style="color:var(--deep)">
+      Talvez você tenha um ótimo propósito, mas ainda encontre dificuldades para transformar esse propósito em um projeto estruturado.
+    </h2>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Não saber por onde começar um projeto.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Dificuldade para estruturar objetivos e indicadores.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Insegurança na elaboração de propostas.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Dificuldade para identificar fontes de recursos.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Pouca clareza sobre prestação de contas.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Projetos bons que não conseguem demonstrar impacto.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Equipes que executam muito, mas planejam pouco.</p>
+      <p class="text-sm leading-relaxed" style="color:#5A5748">Dificuldade para apresentar projetos de maneira profissional.</p>
+    </div>
+
+    <p class="mt-14 font-display italic text-xl lg:text-2xl" style="color:var(--deep)">É justamente entre o propósito e a execução que a Bethel atua.</p>
+  </div>
+</section>
+
+<!-- ======================= METODOLOGIA ======================= -->
+<section id="metodologia" class="py-24 lg:py-32 px-6 lg:px-10 reveal">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="eyebrow"><span class="idx">07</span><span class="rule"></span>Metodologia Bethel</p>
+      <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--deep)">Aprender. Estruturar. Aplicar. Transformar.</h2>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="border-t-2 pt-6" style="border-color:var(--gold)">
+        <span class="font-display italic text-2xl" style="color:var(--gold)">01</span>
+        <h3 class="font-display text-xl mt-2" style="color:var(--deep)">Compreender</h3>
+        <p class="mt-2 text-sm" style="color:#5A5748">Entender o contexto, o problema e o propósito.</p>
+      </div>
+      <div class="border-t-2 pt-6" style="border-color:var(--gold)">
+        <span class="font-display italic text-2xl" style="color:var(--gold)">02</span>
+        <h3 class="font-display text-xl mt-2" style="color:var(--deep)">Estruturar</h3>
+        <p class="mt-2 text-sm" style="color:#5A5748">Transformar ideias em estratégias, planos e projetos.</p>
+      </div>
+      <div class="border-t-2 pt-6" style="border-color:var(--gold)">
+        <span class="font-display italic text-2xl" style="color:var(--gold)">03</span>
+        <h3 class="font-display text-xl mt-2" style="color:var(--deep)">Aplicar</h3>
+        <p class="mt-2 text-sm" style="color:#5A5748">Utilizar ferramentas diretamente na realidade profissional.</p>
+      </div>
+      <div class="border-t-2 pt-6" style="border-color:var(--gold)">
+        <span class="font-display italic text-2xl" style="color:var(--gold)">04</span>
+        <h3 class="font-display text-xl mt-2" style="color:var(--deep)">Transformar</h3>
+        <p class="mt-2 text-sm" style="color:#5A5748">Converter conhecimento em melhores decisões e resultados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= EXPERIÊNCIA DE APRENDIZAGEM ======================= -->
+<section class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--paper-alt)">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-5">
+      <p class="eyebrow"><span class="idx">08</span><span class="rule"></span>Experiência de aprendizagem</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Dependendo da formação escolhida, a experiência poderá incluir:</h2>
+    </div>
+    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-4">
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Aulas online</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Encontros ao vivo</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Materiais complementares</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Ferramentas práticas</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Modelos editáveis</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Estudos de caso</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Exercícios práticos</p>
+      <p class="text-base border-b hairline pb-4" style="color:#3B3D34">Comunidade ou acompanhamento, quando aplicável</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ORGANIZAÇÕES ======================= -->
+<section class="py-24 lg:py-32 px-6 lg:px-10 reveal">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-8">
+      <p class="eyebrow"><span class="idx">09</span><span class="rule"></span>Para organizações</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Formação também para organizações.</h2>
+      <p class="mt-6 text-lg leading-relaxed max-w-2xl" style="color:#3B3D34">
+        A Bethel também poderá desenvolver capacitações e treinamentos personalizados para equipes, instituições sociais, organizações religiosas, hospitais e organizações filantrópicas.
+      </p>
+    </div>
+    <div class="lg:col-span-4 lg:text-right">
+      <a href="#" class="btn btn-primary js-whatsapp" data-msg="Olá! Gostaria de saber mais sobre uma formação personalizada da Bethel para minha equipe.">Quero uma formação para minha equipe</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DEPOIMENTOS (oculta — sem depoimentos reais ainda) ======================= -->
+<!--
+  SEÇÃO DE DEPOIMENTOS: mantida oculta pois não há depoimentos reais fornecidos.
+  Para ativar, remova este comentário e insira depoimentos reais (nome, cargo/instituição
+  e autorização de uso) no array TESTEMUNHOS no script no fim do arquivo, e descomente
+  o bloco <section id="depoimentos"> correspondente.
+-->
+
+<!-- ======================= CAPTURA DE LEADS ======================= -->
+<section id="contato" class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--deep)">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-5">
+      <p class="eyebrow on-dark"><span class="idx" style="color:var(--gold)">10</span><span class="rule"></span>Cadastro</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--paper)">Novas formações estão sendo preparadas.</h2>
+      <p class="mt-6 text-base leading-relaxed" style="color:#C9C6B9">
+        Cadastre-se para receber informações sobre os próximos cursos, aulas e conteúdos da Bethel.
+      </p>
+    </div>
+
+    <div class="lg:col-span-7">
+      <form id="lead-form" class="grid sm:grid-cols-2 gap-5" novalidate>
+        <input type="hidden" id="lead-curso" name="curso" value="">
+
+        <div class="sm:col-span-2">
+          <label for="lead-nome" class="block text-xs uppercase tracking-widest mb-2" style="color:#C9C6B9">Nome</label>
+          <input type="text" id="lead-nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div>
+          <label for="lead-email" class="block text-xs uppercase tracking-widest mb-2" style="color:#C9C6B9">E-mail</label>
+          <input type="email" id="lead-email" name="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div>
+          <label for="lead-whatsapp" class="block text-xs uppercase tracking-widest mb-2" style="color:#C9C6B9">WhatsApp</label>
+          <input type="tel" id="lead-whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="sm:col-span-2 flex items-start gap-3 mt-2">
+          <input type="checkbox" id="lead-consent" name="consentimento" required class="mt-1" style="width:auto">
+          <label for="lead-consent" class="text-sm" style="color:#C9C6B9">Concordo em receber comunicações da Bethel Consultoria.</label>
+        </div>
+
+        <div class="sm:col-span-2 mt-2">
+          <button type="submit" class="btn btn-gold w-full sm:w-auto">Quero receber novidades</button>
+        </div>
+
+        <p id="lead-error" class="sm:col-span-2 text-sm hidden" style="color:#E3A45C">Por favor, preencha os campos obrigatórios e aceite os termos.</p>
+      </form>
+
+      <div id="lead-success" class="lead-success border p-6" style="border-color:var(--line-dark)">
+        <p class="font-display italic text-xl" style="color:var(--paper)">Cadastro recebido.</p>
+        <p class="mt-2 text-sm" style="color:#C9C6B9">Obrigado! Assim que novas formações forem abertas, você será avisado por e-mail ou WhatsApp.</p>
+      </div>
+
+      <p class="mt-6 text-xs" style="color:#8D8A7C">
+        Seus dados são utilizados exclusivamente para envio de informações sobre as formações da Bethel, em conformidade com a LGPD.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="py-24 lg:py-32 px-6 lg:px-10 reveal">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-4">
+      <p class="eyebrow"><span class="idx">11</span><span class="rule"></span>Perguntas frequentes</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Dúvidas comuns sobre as formações.</h2>
+    </div>
+
+    <div class="lg:col-span-8">
+      <details class="faq py-6">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="font-display text-lg" style="color:var(--deep)">Para quem são as formações da Bethel?</span>
+          <span class="plus text-2xl leading-none" style="color:var(--gold)">+</span>
+        </summary>
+        <p class="mt-4 pr-10 text-sm leading-relaxed" style="color:#5A5748">
+          Para gestores, lideranças, equipes e profissionais que atuam ou se relacionam com organizações sociais, filantrópicas, instituições religiosas, hospitais e projetos de impacto social.
+        </p>
+      </details>
+
+      <details class="faq py-6">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="font-display text-lg" style="color:var(--deep)">Preciso trabalhar no terceiro setor para participar?</span>
+          <span class="plus text-2xl leading-none" style="color:var(--gold)">+</span>
+        </summary>
+        <p class="mt-4 pr-10 text-sm leading-relaxed" style="color:#5A5748">
+          Não. As formações são úteis para qualquer profissional que precise estruturar projetos, estratégias e processos de gestão, dentro ou fora do terceiro setor.
+        </p>
+      </details>
+
+      <details class="faq py-6">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="font-display text-lg" style="color:var(--deep)">Os cursos são online ou presenciais?</span>
+          <span class="plus text-2xl leading-none" style="color:var(--gold)">+</span>
+        </summary>
+        <p class="mt-4 pr-10 text-sm leading-relaxed" style="color:#5A5748">
+          Depende da formação e será informado na página específica de cada curso.
+        </p>
+      </details>
+
+      <details class="faq py-6">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="font-display text-lg" style="color:var(--deep)">As formações oferecem certificado?</span>
+          <span class="plus text-2xl leading-none" style="color:var(--gold)">+</span>
+        </summary>
+        <p class="mt-4 pr-10 text-sm leading-relaxed" style="color:#5A5748">
+          Essa informação estará disponível na página específica de cada formação.
+        </p>
+      </details>
+
+      <details class="faq py-6">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="font-display text-lg" style="color:var(--deep)">A Bethel realiza treinamentos para empresas e instituições?</span>
+          <span class="plus text-2xl leading-none" style="color:var(--gold)">+</span>
+        </summary>
+        <p class="mt-4 pr-10 text-sm leading-relaxed" style="color:#5A5748">
+          Sim. A Bethel desenvolve capacitações personalizadas conforme o escopo contratado pela organização.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA FINAL ======================= -->
+<section class="py-28 lg:py-36 px-6 lg:px-10 border-t hairline-dark reveal text-center" style="background:var(--deep)">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--paper)">
+      Propósito é onde tudo começa.<br>
+      <em class="italic" style="color:var(--gold)">Estratégia é o que faz ele avançar.</em>
+    </h2>
+    <p class="mt-8 text-lg leading-relaxed" style="color:#C9C6B9">
+      Conheça as formações da Bethel e transforme conhecimento em projetos, decisões e impacto.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-4 justify-center">
+      <a href="#formacoes" class="btn btn-gold">Conheça as formações</a>
+      <a href="#" class="btn btn-ghost-light js-whatsapp" data-msg="Olá! Gostaria de falar com a Bethel sobre as formações.">Falar com a Bethel</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="pt-20 pb-10 px-6 lg:px-10" style="background:var(--deep-2)">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 pb-14 border-b hairline-dark">
+    <div class="lg:col-span-5">
+      <span class="font-display text-2xl" style="color:var(--paper)">BETHEL</span>
+      <span class="block text-[.65rem] tracking-[.25em] uppercase mt-1" style="color:var(--gold)">Consultoria</span>
+      <p class="mt-6 text-sm max-w-sm leading-relaxed" style="color:#9B9788">
+        Estratégia, gestão e impacto para organizações que cuidam de pessoas e transformam realidades.
+      </p>
+    </div>
+
+    <div class="lg:col-span-3">
+      <h3 class="text-xs uppercase tracking-widest mb-5" style="color:#8D8A7C">Navegação</h3>
+      <nav class="flex flex-col gap-3" aria-label="Links do rodapé">
+        <a href="#formacoes" class="text-sm" style="color:#C9C6B9">Formações</a>
+        <a href="#sobre" class="text-sm" style="color:#C9C6B9">Sobre</a>
+        <a href="#contato" class="text-sm" style="color:#C9C6B9">Contato</a>
+        <!-- TODO: criar e linkar páginas reais de Política de Privacidade e Termos de Uso -->
+        <a href="#" class="text-sm" style="color:#C9C6B9">Política de Privacidade</a>
+        <a href="#" class="text-sm" style="color:#C9C6B9">Termos de Uso</a>
+      </nav>
+    </div>
+
+    <div class="lg:col-span-4">
+      <h3 class="text-xs uppercase tracking-widest mb-5" style="color:#8D8A7C">Redes e contato</h3>
+      <div class="flex flex-col gap-3">
+        <!-- TODO: substituir os href="#" abaixo pelas URLs reais -->
+        <a href="#" class="text-sm js-em-breve" style="color:#C9C6B9">Instagram</a>
+        <a href="#" class="text-sm js-em-breve" style="color:#C9C6B9">LinkedIn</a>
+        <a href="#" class="text-sm js-whatsapp" data-msg="Olá! Vim pelo site da Bethel Consultoria." style="color:#C9C6B9">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="max-w-7xl mx-auto pt-8 text-xs" style="color:#6E6C60">
+    © <span id="ano-atual"></span> Bethel Consultoria. Todos os direitos reservados.
+  </p>
+</footer>
+
+<script>
+/* =========================================================================
+   CONFIGURAÇÃO — EDITE AQUI
+   Altere os valores abaixo para atualizar WhatsApp, cursos e FAQ em todo o site.
+   ========================================================================= */
+
+// Número de WhatsApp da Bethel (formato internacional, somente números)
+// TODO: substituir pelo número real antes de publicar
+const WHATSAPP_NUMBER = "5547900000000";
+
+// Cursos e formações — edite, adicione ou remova itens livremente.
+// Campos vazios (duracao, imagem, link) simplesmente não são exibidos no card.
+const CURSOS = [
+  {
+    categoria: "Gestão de Projetos",
+    nome: "Formação em Gestão de Projetos",
+    descricao: "Fundamentos e ferramentas para planejar, executar e acompanhar projetos institucionais com mais clareza e consistência.",
+    modalidade: "A definir",
+    nivel: "A definir",
+    status: "Em breve",
+    duracao: "",
+    link: "",
+    cta: "Entrar na lista de espera"
+  },
+  {
+    categoria: "Captação de Recursos",
+    nome: "Formação em Captação e Mobilização de Recursos",
+    descricao: "Estratégias práticas para identificar fontes de recursos, estruturar propostas e mobilizar apoiadores.",
+    modalidade: "A definir",
+    nivel: "A definir",
+    status: "Lista de espera",
+    duracao: "",
+    link: "",
+    cta: "Entrar na lista de espera"
+  },
+  {
+    categoria: "Elaboração de Projetos",
+    nome: "Elaboração e Estruturação de Projetos",
+    descricao: "Como transformar uma ideia em um projeto bem estruturado, com objetivos, indicadores e planejamento claros.",
+    modalidade: "A definir",
+    nivel: "A definir",
+    status: "Em breve",
+    duracao: "",
+    link: "",
+    cta: "Entrar na lista de espera"
+  },
+  {
+    categoria: "Terceiro Setor",
+    nome: "Gestão para o Terceiro Setor",
+    descricao: "Boas práticas de gestão, governança e prestação de contas para organizações sociais e filantrópicas.",
+    modalidade: "A definir",
+    nivel: "A definir",
+    status: "Em breve",
+    duracao: "",
+    link: "",
+    cta: "Entrar na lista de espera"
+  },
+  {
+    categoria: "Planejamento Estratégico",
+    nome: "Planejamento Estratégico Institucional",
+    descricao: "Ferramentas para transformar propósito institucional em direção estratégica clara e executável.",
+    modalidade: "A definir",
+    nivel: "A definir",
+    status: "Em breve",
+    duracao: "",
+    link: "",
+    cta: "Entrar na lista de espera"
+  },
+  {
+    categoria: "Relações Institucionais",
+    nome: "Relações Institucionais e Comunicação",
+    descricao: "Como estruturar relacionamento institucional e comunicação estratégica com diferentes públicos e parceiros.",
+    modalidade: "A definir",
+    nivel: "A definir",
+    status: "Em breve",
+    duracao: "",
+    link: "",
+    cta: "Entrar na lista de espera"
+  }
+];
+
+// Depoimentos reais — vazio até que depoimentos autorizados sejam fornecidos.
+const TESTEMUNHOS = [];
+
+/* =========================================================================
+   RENDERIZAÇÃO DOS CURSOS
+   ========================================================================= */
+function statusClass(status){
+  if(status === "Inscrições abertas") return "status-aberta";
+  if(status === "Lista de espera") return "status-espera";
+  return "status-embreve";
+}
+
+function renderCursos(){
+  const grid = document.getElementById('cursos-grid');
+  if(!grid) return;
+  grid.innerHTML = CURSOS.map(c => `
+    <article class="card-curso">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <span class="text-xs uppercase tracking-widest" style="color:var(--gold)">${c.categoria}</span>
+        <span class="status-tag ${statusClass(c.status)}">${c.status}</span>
+      </div>
+      <h3 class="font-display text-xl leading-snug" style="color:var(--deep)">${c.nome}</h3>
+      <p class="mt-3 text-sm leading-relaxed flex-1" style="color:#5A5748">${c.descricao}</p>
+      <div class="mt-5 flex flex-wrap gap-x-4 gap-y-1 text-xs" style="color:#8A8676">
+        ${c.modalidade ? `<span>${c.modalidade}</span>` : ``}
+        ${c.nivel ? `<span>${c.nivel}</span>` : ``}
+        ${c.duracao ? `<span>${c.duracao}</span>` : ``}
+      </div>
+      <button type="button" class="btn btn-ghost mt-6 curso-cta" data-curso="${c.nome}">${c.cta}</button>
+    </article>
+  `).join('');
+
+  grid.querySelectorAll('.curso-cta').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const curso = btn.getAttribute('data-curso');
+      const hidden = document.getElementById('lead-curso');
+      if(hidden) hidden.value = curso;
+      document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => document.getElementById('lead-nome')?.focus(), 500);
+    });
+  });
+}
+renderCursos();
+
+/* =========================================================================
+   WHATSAPP — aplica o número configurado a todos os links .js-whatsapp
+   ========================================================================= */
+document.querySelectorAll('.js-whatsapp').forEach(el => {
+  const msg = el.getAttribute('data-msg') || 'Olá! Vim pelo site da Bethel Consultoria.';
+  el.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`);
+  el.setAttribute('target', '_blank');
+  el.setAttribute('rel', 'noopener noreferrer');
+});
+
+/* =========================================================================
+   MODAL "EM BREVE" — intercepta botões que ainda direcionariam para fora
+   do site (WhatsApp, Instagram, LinkedIn) enquanto essas URLs não são reais
+   ========================================================================= */
+const modalEmBreve = document.getElementById('modal-embreve');
+function openModalEmBreve(){ modalEmBreve.classList.add('open'); }
+function closeModalEmBreve(){ modalEmBreve.classList.remove('open'); }
+
+document.querySelectorAll('.js-whatsapp, .js-em-breve').forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModalEmBreve();
+  });
+});
+modalEmBreve.querySelector('.modal-close').addEventListener('click', closeModalEmBreve);
+modalEmBreve.addEventListener('click', (e) => { if(e.target === modalEmBreve) closeModalEmBreve(); });
+window.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeModalEmBreve(); });
+
+/* =========================================================================
+   HEADER: sombra ao rolar
+   ========================================================================= */
+const header = document.getElementById('site-header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 12);
+}, { passive: true });
+
+/* =========================================================================
+   MENU MOBILE
+   ========================================================================= */
+const menuToggle = document.getElementById('menu-toggle');
+const menuClose = document.getElementById('menu-close');
+const mobileMenu = document.getElementById('mobile-menu');
+
+function openMenu(){
+  mobileMenu.classList.add('open');
+  menuToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu(){
+  mobileMenu.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+menuToggle.addEventListener('click', openMenu);
+menuClose.addEventListener('click', closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+/* =========================================================================
+   SCROLL REVEAL
+   ========================================================================= */
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('is-visible'));
+}
+
+/* =========================================================================
+   FORMULÁRIO DE LEADS
+   Ponto único de integração: a função submitLead(data) é onde uma integração
+   futura com CRM, ESP (e-mail marketing) ou webhook deve ser conectada.
+   ========================================================================= */
+function submitLead(data){
+  // TODO: substituir por uma chamada real, por exemplo:
+  // fetch('https://sua-ferramenta.com/api/leads', {
+  //   method: 'POST',
+  //   headers: { 'Content-Type': 'application/json' },
+  //   body: JSON.stringify(data)
+  // });
+  console.log('Novo lead Bethel:', data);
+}
+
+const leadForm = document.getElementById('lead-form');
+const leadError = document.getElementById('lead-error');
+const leadSuccess = document.getElementById('lead-success');
+
+leadForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nome = document.getElementById('lead-nome').value.trim();
+  const email = document.getElementById('lead-email').value.trim();
+  const whatsapp = document.getElementById('lead-whatsapp').value.trim();
+  const consentimento = document.getElementById('lead-consent').checked;
+  const curso = document.getElementById('lead-curso').value;
+
+  if(!nome || !email || !whatsapp || !consentimento){
+    leadError.classList.remove('hidden');
+    return;
+  }
+  leadError.classList.add('hidden');
+
+  submitLead({ nome, email, whatsapp, curso, consentimento, data: new Date().toISOString() });
+
+  leadForm.style.display = 'none';
+  leadSuccess.classList.add('show');
+});
+
+document.getElementById('ano-atual').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
