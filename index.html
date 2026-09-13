@@ -198,17 +198,6 @@
     background: repeating-linear-gradient(135deg, var(--paper-alt), var(--paper-alt) 10px, var(--paper) 10px, var(--paper) 20px);
   }
 
-  input[type=text], input[type=email], input[type=tel], select{
-    background: var(--paper); border:1px solid var(--line); color: var(--ink);
-    padding:.85rem 1rem; width:100%; font-family:'Libre Franklin', sans-serif; font-size:.95rem;
-  }
-  input:focus, select:focus{ border-color: var(--deep); }
-
-  ::placeholder{ color:#8A8676; }
-
-  .lead-success{ display:none; }
-  .lead-success.show{ display:block; }
-
   /* Modal: Em breve */
   #modal-embreve{
     position:fixed; inset:0; z-index:100; display:none;
@@ -244,9 +233,10 @@
       <a href="#inicio" class="nav-link">Início</a>
       <a href="#formacoes" class="nav-link">Formações</a>
       <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#consultoria" class="nav-link">Consultoria</a>
       <a href="#para-quem" class="nav-link">Para quem é</a>
       <a href="#metodologia" class="nav-link">Metodologia</a>
-      <a href="#contato" class="nav-link">Contato</a>
+      <a href="#" class="nav-link js-whatsapp" data-msg="Olá! Gostaria de falar com a Bethel Consultoria.">Contato</a>
     </nav>
 
     <a href="#formacoes" class="hidden lg:inline-flex btn btn-primary">Conheça as formações</a>
@@ -270,9 +260,10 @@
     <a href="#inicio" class="mobile-link font-display text-3xl" style="color:var(--paper)">Início</a>
     <a href="#formacoes" class="mobile-link font-display text-3xl" style="color:var(--paper)">Formações</a>
     <a href="#sobre" class="mobile-link font-display text-3xl" style="color:var(--paper)">Sobre</a>
+    <a href="#consultoria" class="mobile-link font-display text-3xl" style="color:var(--paper)">Consultoria</a>
     <a href="#para-quem" class="mobile-link font-display text-3xl" style="color:var(--paper)">Para quem é</a>
     <a href="#metodologia" class="mobile-link font-display text-3xl" style="color:var(--paper)">Metodologia</a>
-    <a href="#contato" class="mobile-link font-display text-3xl" style="color:var(--paper)">Contato</a>
+    <a href="#" class="mobile-link font-display text-3xl js-whatsapp" data-msg="Olá! Gostaria de falar com a Bethel Consultoria." style="color:var(--paper)">Contato</a>
     <a href="#formacoes" class="mobile-link btn btn-gold mt-4">Conheça as formações</a>
   </nav>
 </div>
@@ -360,7 +351,7 @@
     <div id="cursos-grid" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
     <div class="mt-14 text-center">
-      <a href="#contato" class="btn btn-ghost">Quero receber os próximos cursos</a>
+      <a href="#" class="btn btn-ghost js-whatsapp" data-msg="Olá! Gostaria de receber informações sobre os próximos cursos da Bethel.">Quero receber os próximos cursos</a>
     </div>
   </div>
 </section>
@@ -405,11 +396,83 @@
   </div>
 </section>
 
+<!-- ======================= CONSULTORIA ======================= -->
+<section id="consultoria" class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--paper-alt)">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="eyebrow"><span class="idx">04</span><span class="rule"></span>Consultoria Bethel</p>
+      <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--deep)">Estratégia, estrutura e acompanhamento para transformar necessidades em resultados.</h2>
+      <p class="mt-6 text-lg leading-relaxed" style="color:#3B3D34">
+        A Bethel oferece consultoria especializada para organizações que desejam fortalecer sua gestão, estruturar projetos, captar recursos e acompanhar suas iniciativas com mais segurança e clareza.
+      </p>
+      <p class="mt-5 text-lg leading-relaxed" style="color:#3B3D34">
+        Cada atuação é desenvolvida de acordo com a realidade da instituição, podendo ocorrer de forma pontual ou por meio de acompanhamento mensal.
+      </p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-x-8 gap-y-10">
+      <div class="border-t hairline pt-6">
+        <h3 class="font-display text-lg" style="color:var(--deep)">Gestão e planejamento institucional</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:#5A5748">Diagnóstico, definição de prioridades, organização de processos e construção de planos estratégicos aplicáveis à realidade da instituição.</p>
+      </div>
+      <div class="border-t hairline pt-6">
+        <h3 class="font-display text-lg" style="color:var(--deep)">Elaboração e gestão de projetos</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:#5A5748">Estruturação de objetivos, metas, atividades, indicadores, cronogramas, orçamentos e planos de trabalho.</p>
+      </div>
+      <div class="border-t hairline pt-6">
+        <h3 class="font-display text-lg" style="color:var(--deep)">Captação e mobilização de recursos</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:#5A5748">Identificação de oportunidades, análise de editais, elaboração de propostas e relacionamento com financiadores e parceiros.</p>
+      </div>
+      <div class="border-t hairline pt-6">
+        <h3 class="font-display text-lg" style="color:var(--deep)">Monitoramento e prestação de contas</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:#5A5748">Acompanhamento de prazos, resultados e evidências, além do apoio na elaboração de relatórios técnicos e organização das informações financeiras.</p>
+      </div>
+    </div>
+
+    <p class="mt-14 text-lg leading-relaxed max-w-3xl" style="color:#3B3D34">
+      Para organizações sociais, instituições religiosas e filantrópicas, projetos sociais e lideranças que precisam transformar boas ideias em iniciativas consistentes e sustentáveis.
+    </p>
+
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="#" class="btn btn-primary js-whatsapp" data-msg="Olá! Gostaria de solicitar uma conversa sobre consultoria com a Bethel.">Solicite uma conversa</a>
+      <a href="#consultoria-continuada" class="btn btn-ghost">Conheça a consultoria</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONSULTORIA CONTINUADA ======================= -->
+<section id="consultoria-continuada" class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-5">
+      <p class="eyebrow"><span class="idx">05</span><span class="rule"></span>Consultoria Continuada</p>
+      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Projetos estruturados. Recursos bem aplicados. Resultados que permanecem.</h2>
+    </div>
+
+    <div class="lg:col-span-7">
+      <p class="text-lg leading-relaxed" style="color:#3B3D34">
+        A Bethel oferece assessoria estratégica continuada para instituições religiosas, filantrópicas e organizações sociais que precisam transformar necessidades em projetos consistentes e sustentáveis.
+      </p>
+      <p class="mt-5 text-lg leading-relaxed" style="color:#3B3D34">
+        Nossa atuação contempla todo o ciclo dos projetos: diagnóstico institucional, identificação de oportunidades, elaboração de propostas, estruturação de planos de trabalho e orçamentos, interlocução com financiadores, acompanhamento da execução, monitoramento de resultados e apoio à prestação de contas.
+      </p>
+      <p class="mt-5 text-lg leading-relaxed" style="color:#3B3D34">
+        Mais do que elaborar projetos, caminhamos ao lado da instituição, organizando processos, orientando responsáveis e contribuindo para que os recursos conquistados sejam aplicados com segurança, transparência e alinhamento à missão institucional.
+      </p>
+
+      <p class="mt-10 font-display italic text-xl" style="color:var(--deep)">Modalidade de acompanhamento mensal, desenvolvida de acordo com as necessidades e prioridades de cada organização.</p>
+
+      <div class="mt-10">
+        <a href="#" class="btn btn-primary js-whatsapp" data-msg="Olá! Gostaria de solicitar uma proposta de consultoria continuada com a Bethel.">Solicite uma proposta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ======================= DIFERENCIAIS ======================= -->
 <section class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline-dark reveal" style="background:var(--deep)">
   <div class="max-w-7xl mx-auto">
     <div class="max-w-2xl">
-      <p class="eyebrow on-dark"><span class="idx" style="color:var(--gold)">04</span><span class="rule"></span>Diferenciais</p>
+      <p class="eyebrow on-dark"><span class="idx" style="color:var(--gold)">06</span><span class="rule"></span>Diferenciais</p>
       <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--paper)">Mais prática. Menos conteúdo que termina na última aula.</h2>
     </div>
 
@@ -438,7 +501,7 @@
 <section id="para-quem" class="py-24 lg:py-32 px-6 lg:px-10 reveal">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
     <div class="lg:col-span-5">
-      <p class="eyebrow"><span class="idx">05</span><span class="rule"></span>Para quem são as formações</p>
+      <p class="eyebrow"><span class="idx">07</span><span class="rule"></span>Para quem são as formações</p>
       <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Para quem quer sair da intenção e construir projetos consistentes.</h2>
     </div>
     <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-4">
@@ -458,7 +521,7 @@
 <!-- ======================= DIAGNÓSTICO / PROBLEMA ======================= -->
 <section class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--paper-alt)">
   <div class="max-w-7xl mx-auto">
-    <p class="eyebrow"><span class="idx">06</span><span class="rule"></span>Diagnóstico</p>
+    <p class="eyebrow"><span class="idx">08</span><span class="rule"></span>Diagnóstico</p>
     <h2 class="font-display font-light text-2xl lg:text-3xl leading-snug max-w-3xl" style="color:var(--deep)">
       Talvez você tenha um ótimo propósito, mas ainda encontre dificuldades para transformar esse propósito em um projeto estruturado.
     </h2>
@@ -482,7 +545,7 @@
 <section id="metodologia" class="py-24 lg:py-32 px-6 lg:px-10 reveal">
   <div class="max-w-7xl mx-auto">
     <div class="max-w-2xl">
-      <p class="eyebrow"><span class="idx">07</span><span class="rule"></span>Metodologia Bethel</p>
+      <p class="eyebrow"><span class="idx">09</span><span class="rule"></span>Metodologia Bethel</p>
       <h2 class="font-display font-light text-3xl lg:text-4xl leading-tight" style="color:var(--deep)">Aprender. Estruturar. Aplicar. Transformar.</h2>
     </div>
 
@@ -515,7 +578,7 @@
 <section class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--paper-alt)">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
     <div class="lg:col-span-5">
-      <p class="eyebrow"><span class="idx">08</span><span class="rule"></span>Experiência de aprendizagem</p>
+      <p class="eyebrow"><span class="idx">10</span><span class="rule"></span>Experiência de aprendizagem</p>
       <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Dependendo da formação escolhida, a experiência poderá incluir:</h2>
     </div>
     <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-4">
@@ -535,7 +598,7 @@
 <section class="py-24 lg:py-32 px-6 lg:px-10 reveal">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
     <div class="lg:col-span-8">
-      <p class="eyebrow"><span class="idx">09</span><span class="rule"></span>Para organizações</p>
+      <p class="eyebrow"><span class="idx">11</span><span class="rule"></span>Para organizações</p>
       <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Formação também para organizações.</h2>
       <p class="mt-6 text-lg leading-relaxed max-w-2xl" style="color:#3B3D34">
         A Bethel também poderá desenvolver capacitações e treinamentos personalizados para equipes, instituições sociais, organizações religiosas, hospitais e organizações filantrópicas.
@@ -555,65 +618,11 @@
   o bloco <section id="depoimentos"> correspondente.
 -->
 
-<!-- ======================= CAPTURA DE LEADS ======================= -->
-<section id="contato" class="py-24 lg:py-32 px-6 lg:px-10 border-t hairline reveal" style="background:var(--deep)">
-  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
-    <div class="lg:col-span-5">
-      <p class="eyebrow on-dark"><span class="idx" style="color:var(--gold)">10</span><span class="rule"></span>Cadastro</p>
-      <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--paper)">Novas formações estão sendo preparadas.</h2>
-      <p class="mt-6 text-base leading-relaxed" style="color:#C9C6B9">
-        Cadastre-se para receber informações sobre os próximos cursos, aulas e conteúdos da Bethel.
-      </p>
-    </div>
-
-    <div class="lg:col-span-7">
-      <form id="lead-form" class="grid sm:grid-cols-2 gap-5" novalidate>
-        <input type="hidden" id="lead-curso" name="curso" value="">
-
-        <div class="sm:col-span-2">
-          <label for="lead-nome" class="block text-xs uppercase tracking-widest mb-2" style="color:#C9C6B9">Nome</label>
-          <input type="text" id="lead-nome" name="nome" placeholder="Seu nome completo" required>
-        </div>
-
-        <div>
-          <label for="lead-email" class="block text-xs uppercase tracking-widest mb-2" style="color:#C9C6B9">E-mail</label>
-          <input type="email" id="lead-email" name="email" placeholder="seu@email.com" required>
-        </div>
-
-        <div>
-          <label for="lead-whatsapp" class="block text-xs uppercase tracking-widest mb-2" style="color:#C9C6B9">WhatsApp</label>
-          <input type="tel" id="lead-whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
-        </div>
-
-        <div class="sm:col-span-2 flex items-start gap-3 mt-2">
-          <input type="checkbox" id="lead-consent" name="consentimento" required class="mt-1" style="width:auto">
-          <label for="lead-consent" class="text-sm" style="color:#C9C6B9">Concordo em receber comunicações da Bethel Consultoria.</label>
-        </div>
-
-        <div class="sm:col-span-2 mt-2">
-          <button type="submit" class="btn btn-gold w-full sm:w-auto">Quero receber novidades</button>
-        </div>
-
-        <p id="lead-error" class="sm:col-span-2 text-sm hidden" style="color:#E3A45C">Por favor, preencha os campos obrigatórios e aceite os termos.</p>
-      </form>
-
-      <div id="lead-success" class="lead-success border p-6" style="border-color:var(--line-dark)">
-        <p class="font-display italic text-xl" style="color:var(--paper)">Cadastro recebido.</p>
-        <p class="mt-2 text-sm" style="color:#C9C6B9">Obrigado! Assim que novas formações forem abertas, você será avisado por e-mail ou WhatsApp.</p>
-      </div>
-
-      <p class="mt-6 text-xs" style="color:#8D8A7C">
-        Seus dados são utilizados exclusivamente para envio de informações sobre as formações da Bethel, em conformidade com a LGPD.
-      </p>
-    </div>
-  </div>
-</section>
-
 <!-- ======================= FAQ ======================= -->
 <section class="py-24 lg:py-32 px-6 lg:px-10 reveal">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-14">
     <div class="lg:col-span-4">
-      <p class="eyebrow"><span class="idx">11</span><span class="rule"></span>Perguntas frequentes</p>
+      <p class="eyebrow"><span class="idx">12</span><span class="rule"></span>Perguntas frequentes</p>
       <h2 class="font-display font-light text-3xl leading-tight" style="color:var(--deep)">Dúvidas comuns sobre as formações.</h2>
     </div>
 
@@ -706,7 +715,7 @@
       <nav class="flex flex-col gap-3" aria-label="Links do rodapé">
         <a href="#formacoes" class="text-sm" style="color:#C9C6B9">Formações</a>
         <a href="#sobre" class="text-sm" style="color:#C9C6B9">Sobre</a>
-        <a href="#contato" class="text-sm" style="color:#C9C6B9">Contato</a>
+        <a href="#" class="text-sm js-whatsapp" data-msg="Olá! Gostaria de falar com a Bethel Consultoria." style="color:#C9C6B9">Contato</a>
         <!-- TODO: criar e linkar páginas reais de Política de Privacidade e Termos de Uso -->
         <a href="#" class="text-sm" style="color:#C9C6B9">Política de Privacidade</a>
         <a href="#" class="text-sm" style="color:#C9C6B9">Termos de Uso</a>
@@ -737,7 +746,7 @@
 
 // Número de WhatsApp da Bethel (formato internacional, somente números)
 // TODO: substituir pelo número real antes de publicar
-const WHATSAPP_NUMBER = "5547900000000";
+const WHATSAPP_NUMBER = "5547996815409";
 
 // Cursos e formações — edite, adicione ou remova itens livremente.
 // Campos vazios (duracao, imagem, link) simplesmente não são exibidos no card.
@@ -842,13 +851,12 @@ function renderCursos(){
     </article>
   `).join('');
 
+  // Cada CTA de curso abre o WhatsApp já com o nome da formação na mensagem
   grid.querySelectorAll('.curso-cta').forEach(btn => {
     btn.addEventListener('click', () => {
       const curso = btn.getAttribute('data-curso');
-      const hidden = document.getElementById('lead-curso');
-      if(hidden) hidden.value = curso;
-      document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
-      setTimeout(() => document.getElementById('lead-nome')?.focus(), 500);
+      const msg = `Olá! Gostaria de saber mais sobre a formação "${curso}" da Bethel.`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
     });
   });
 }
@@ -865,14 +873,15 @@ document.querySelectorAll('.js-whatsapp').forEach(el => {
 });
 
 /* =========================================================================
-   MODAL "EM BREVE" — intercepta botões que ainda direcionariam para fora
-   do site (WhatsApp, Instagram, LinkedIn) enquanto essas URLs não são reais
+   MODAL "EM BREVE" — intercepta apenas os links de redes sociais
+   (Instagram, LinkedIn) enquanto essas URLs não são reais.
+   Os links de WhatsApp já apontam para o número real e não são interceptados.
    ========================================================================= */
 const modalEmBreve = document.getElementById('modal-embreve');
 function openModalEmBreve(){ modalEmBreve.classList.add('open'); }
 function closeModalEmBreve(){ modalEmBreve.classList.remove('open'); }
 
-document.querySelectorAll('.js-whatsapp, .js-em-breve').forEach(el => {
+document.querySelectorAll('.js-em-breve').forEach(el => {
   el.addEventListener('click', (e) => {
     e.preventDefault();
     openModalEmBreve();
@@ -928,45 +937,6 @@ if('IntersectionObserver' in window){
 } else {
   revealEls.forEach(el => el.classList.add('is-visible'));
 }
-
-/* =========================================================================
-   FORMULÁRIO DE LEADS
-   Ponto único de integração: a função submitLead(data) é onde uma integração
-   futura com CRM, ESP (e-mail marketing) ou webhook deve ser conectada.
-   ========================================================================= */
-function submitLead(data){
-  // TODO: substituir por uma chamada real, por exemplo:
-  // fetch('https://sua-ferramenta.com/api/leads', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify(data)
-  // });
-  console.log('Novo lead Bethel:', data);
-}
-
-const leadForm = document.getElementById('lead-form');
-const leadError = document.getElementById('lead-error');
-const leadSuccess = document.getElementById('lead-success');
-
-leadForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nome = document.getElementById('lead-nome').value.trim();
-  const email = document.getElementById('lead-email').value.trim();
-  const whatsapp = document.getElementById('lead-whatsapp').value.trim();
-  const consentimento = document.getElementById('lead-consent').checked;
-  const curso = document.getElementById('lead-curso').value;
-
-  if(!nome || !email || !whatsapp || !consentimento){
-    leadError.classList.remove('hidden');
-    return;
-  }
-  leadError.classList.add('hidden');
-
-  submitLead({ nome, email, whatsapp, curso, consentimento, data: new Date().toISOString() });
-
-  leadForm.style.display = 'none';
-  leadSuccess.classList.add('show');
-});
 
 document.getElementById('ano-atual').textContent = new Date().getFullYear();
 </script>
